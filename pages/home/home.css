@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ////////////// navbar ////////////// */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding: 20px 0 20px 0px;   
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1  );
+    background: rgb(6, 9, 31);
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+    
+}
+nav ul li{
+    display: inline;
+    padding: 4px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+@media (max-width: 820px){
+    .logo{
+        font-size: 20px;
+    }
+}
+@media (max-width:850px) {
+    .checkbtn{
+        display: block;
+        /* cursor: pointer; */
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        padding-top: 20px;
+        text-align: center;
+        background: gray;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        height: 30px 0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width:850px){
+    .admission{
+        display: none;
+    }
+    .content .serving .serving-1{
+        font-size: 40px;
+    }
+}
+/* ///////////// cards ///////////// */
+@media (max-width:760px){
+    .cards{
+        display: block;
+        height: 100%;
+    }
+   
+}
+/* //////////////// top content //////////////// */
+.content{
+    /* background: url("../../img/background.jpeg") no-repeat ; */
+    background-size: cover;
+    background-color: rgb(6, 9, 31);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.admission{
+    background: greenyellow;
+    padding: 30px 40px;
+}
+.serving{
+    padding-top: 20px;
+}
+.serving h1{
+    font-size: 60px;
+}
+.serving p{
+    padding: 30px 0 30px 0;
+}
+.serving button{
+    padding: 20px;
+    border-radius: 12px;
+    background: rgb(203, 255, 124);
+}
+/* /////////////// cards /////////////////// */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 20px;
+    background-color: rgb(6, 9, 31);
+}
+.cardbox{
+    padding: 10px 30px 40px 30px;
+    align-items: center;
+    border-radius: 14px;
+    border: 1px solid black;
+    background:linear-gradient(45deg ,rgb(143, 73, 246), pink) ;
+}
+/* ///////////// About us /////////// */
+.about{
+    height: 70vh;
+    padding: 100px 20px 30px 20px;
+    background-color: rgb(6, 9, 31);
+    color: white;
+}
+.about p{
+    text-align: justify;
+    line-height: 30px;
+}
+
+/* ////////////// campus ///////////// */
+.campus{
+    background-color: rgb(6, 9, 31);
+}
+.campus h1{
+    text-align: center;
+    color: white;
+}
+.campuscard{
+    display: flex;
+    padding: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+}
+.location{
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    height: 200px;
+    padding:  10px 100px 10px 100px;
+    text-align: center;
+    background:linear-gradient(45deg ,rgb(67, 184, 205),rgb(143, 73, 246));
+}
+/* .location:first-child{
+    padding: 60px 100px 140px 100px;
+    height: 60px;
+} */
+.location button{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #333;
+}
+.location h2{
+    font-size: 27px;
+}
+/* /////////////////// Choose us /////////////// */
+
+.content-2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(9, 17, 43);
+    color: #fff;
+    padding-top: 70px;
+    overflow: hidden;
+}
+.content-2 h1{
+    font-size: 32px;
+}
+.content-3{
+    padding-left: 15px;
+}
+.solutions{
+    padding-top: 80px;
+}
+.solutions h3 {
+ padding-bottom:  20px;
+}
+.content-2 .choose .solutions .content-3 p{
+    line-height: 30px;
+}
+
+/* /////////////////////// footer ///////////// */
+footer{
+    background: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px;
+}
